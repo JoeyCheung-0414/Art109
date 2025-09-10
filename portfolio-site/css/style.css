@@ -1,0 +1,53 @@
+/*
+
+Color Palette
+Dark Blue   #1b1e2b
+Blue Grotto #5289b5
+Baby Blue   #afd8f2
+Green     #3c8453
+Off-White   #dbf7ff
+
+*/
+
+/* Global styles 
+---------------------------------------------------------------*/
+body {
+    background-color:#dbf7ff;
+} 
+
+a { 
+    color: #5289b5;
+}
+
+a:hover { 
+    color:#3c8453;
+}
+
+
+/* Home 
+---------------------------------------------------------------*/
+.home {
+    background: url(../images/bg-home-office-studio.jpg) no-repeat ;
+    background-size: cover;
+}
+
+.home .content-wrapper { 
+    background: rgba(219, 247, 255, 0.9) ;
+}
+
+/* Resume
+---------------------------------------------------------------*/
+
+/* Projects
+ --------------------------------------------------------------*/
+
+/* Footer
+---------------------------------------------------------------*/
+footer { 
+    background-color:  #1b1e2b;
+ }
+
+
+footer p { 
+    color: #dbf7ff;
+ }
