@@ -11,43 +11,116 @@ Off-White   #dbf7ff
 
 /* Global styles 
 ---------------------------------------------------------------*/
-body {
-    background-color:#dbf7ff;
-} 
+html {
+    box-sizing: border-box;
+}
 
-a { 
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #dbf7ff;
+    margin: 0;
+}
+
+a {
     color: #5289b5;
 }
 
-a:hover { 
-    color:#3c8453;
+a:hover {
+    color: #3c8453;
 }
 
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+
+}
 
 /* Home 
 ---------------------------------------------------------------*/
+
 .home {
-    background: url(../images/bg-home-office-studio.jpg) no-repeat ;
+    background: url(../images/bg-home-office-studio.jpg) no-repeat;
     background-size: cover;
 }
 
-.home .content-wrapper { 
-    background: rgba(219, 247, 255, 0.9) ;
+.home .content-wrapper {
+    background: rgba(219, 247, 255, 0.9);
 }
 
 /* Resume
 ---------------------------------------------------------------*/
+.resume header::before {
+    background: url(../images/bg-home-office-studio.jpg) center;
+    background-size: cover;
+    display: block;
+    content: "";
+
+    height: 375px;
+}
+
+.button {
+    background-color: #5289b5; 
+    color: #dbf7ff;
+}
+    
+.resume-section {
+    margin-bottom: 50px;
+}
+
+.resume-section h2 { 
+    border-bottom: 2px dashed #5289b5;
+}
+ 
+.download-link { 
+ position: fixed;
+ top: 5px;
+ left: 5px; 
+}
 
 /* Projects
  --------------------------------------------------------------*/
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+}
+
+.project-item img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
 
 /* Footer
 ---------------------------------------------------------------*/
-footer { 
-    background-color:  #1b1e2b;
- }
+footer {
+    background-color: #1b1e2b;
+}
 
 
-footer p { 
+footer p {
     color: #dbf7ff;
- }
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+}
+
+.socials img {
+    width: 32px;
+}
