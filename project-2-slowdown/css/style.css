@@ -1,0 +1,432 @@
+/* Home Page  ---------------------------------------------------------------*/
+.start-page {
+    background-color: burlywood;
+}
+
+.welcome-text {
+    margin: 30vh auto;
+    text-align: center;
+}
+
+.start-button {
+    display: inline-block;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 30px 60px;
+}
+
+.start-button:hover {
+    background-color: aqua;
+    transform: scale(1.25);
+    transition: all .5s;
+}
+
+
+
+/* Ad page ---------------------------------------------------------------*/
+.ad-page {
+    height: 1000px;
+    width: 2000px;
+    background-color: black;
+}
+
+
+
+/* Ad Box ---------------------------------------------------------------*/
+.box-div {
+
+    height: 1000px;
+    width: 2000px;
+
+    position: relative;
+}
+
+div[class^="box-"] {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    position: absolute;
+}
+
+.box-1 {
+    background-color: blue;
+    height: 250px;
+    width: 600px;
+
+    top: 30%;
+    left: 45%;
+}
+
+.box-2 {
+    background-color: blueviolet;
+    height: 200px;
+    width: 450px;
+
+    top: 20%;
+    right: 40%;
+}
+
+.box-3 {
+    background-color: aqua;
+    height: 400px;
+    width: 250px;
+
+    top: 40%;
+    right: 20%;
+}
+
+.box-4 {
+    background-color: palevioletred;
+    height: 300px;
+    width: 400px;
+
+    top: 30%;
+    left: 30%;
+}
+
+.box-5 {
+    background-color: greenyellow;
+    height: 300px;
+    width: 150px;
+
+    top: 2%;
+    left: 15%;
+}
+
+.box-6 {
+    background-color: orange;
+    height: 250px;
+    width: 250px;
+
+    top: 15%;
+    left: 20%;
+}
+
+.box-7 {
+    background-color: brown;
+    height: 100px;
+    width: 250px;
+
+    top: 10%;
+    right: 30%;
+}
+
+.box-8 {
+    background-color: red;
+    height: 200px;
+    width: 350px;
+
+    top: 50%;
+    right: 30%;
+}
+
+.box-9 {
+    background-color: rgb(136, 255, 0);
+    height: 300px;
+    width: 400px;
+
+    top: 5%;
+    right: 5%;
+}
+
+.box-10 {
+    background-color: rgb(196, 107, 156);
+    height: 250px;
+    width: 350px;
+
+    top: 15%;
+    right: 20%;
+}
+
+.box-11 {
+    background-color: rgb(255, 0, 149);
+    height: 300px;
+    width: 250px;
+
+    top: 55%;
+    left: 25%;
+}
+
+.box-12 {
+    background-color: rgb(238, 255, 0);
+    height: 200px;
+    width: 550px;
+
+    top: 60%;
+    left: 5%;
+}
+
+.box-13 {
+    background-color: red;
+    height: 400px;
+    width: 350px;
+
+    bottom: 5%;
+    left: 1%;
+}
+
+.box-14 {
+    background-color: rgb(96, 127, 145);
+    height: 200px;
+    width: 650px;
+
+    top: 36%;
+    left: 10%;
+}
+
+.box-15 {
+    background-color: rgb(226, 184, 184);
+    height: 450px;
+    width: 350px;
+
+    top: 5%;
+    right: 35%;
+}
+
+.box-16 {
+    background-color: rgb(73, 158, 23);
+    height: 150px;
+    width: 450px;
+
+    top: 65%;
+    right: 45%;
+}
+
+.box-17 {
+    background-color: red;
+    height: 350px;
+    width: 350px;
+
+    top: 60%;
+    right: 10%;
+}
+
+.box-18 {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+
+    top: 1%;
+    left: 30%;
+}
+
+.box-19 {
+    background-color: rgb(30, 145, 139);
+    height: 300px;
+    width: 600px;
+
+    top: 1%;
+    left: 1%;
+}
+
+.box-20 {
+    background-color: rgb(75, 11, 38);
+    height: 500px;
+    width: 350px;
+
+    top: 10%;
+    left: 5%;
+}
+
+.box-21 {
+    background-color: red;
+    height: 300px;
+    width: 350px;
+
+    bottom: 1%;
+    right: 60%;
+}
+
+.box-22 {
+    background-color: rgb(94, 59, 14);
+    height: 300px;
+    width: 250px;
+
+    top: 1%;
+    right: 30%;
+}
+
+.box-23 {
+    background-color: rgb(234, 0, 255);
+    height: 200px;
+    width: 350px;
+
+    top: 45%;
+    right: 45%;
+}
+
+.box-24 {
+    background-color: rgb(136, 29, 207);
+    height: 400px;
+    width: 350px;
+
+    top: 11%;
+    right: 3%;
+}
+
+.box-25 {
+    background-color: rgb(69, 78, 88);
+    height: 400px;
+    width: 450px;
+
+    top: 20%;
+    right: 23%;
+}
+
+.box-26 {
+    background-color: rgb(144, 146, 14);
+    height: 300px;
+    width: 550px;
+
+    bottom: 10%;
+    right: 25%;
+}
+
+.box-27 {
+    background-color: rgb(0, 247, 255);
+    height: 300px;
+    width: 450px;
+
+    top: 10%;
+    left: 35%;
+}
+
+.box-28 {
+    background-color: rgb(161, 194, 85);
+    height: 400px;
+    width: 250px;
+
+    top: 35%;
+    right: 1%;
+}
+
+.box-29 {
+    background-color: rgb(211, 130, 130);
+    height: 300px;
+    width: 450px;
+
+    top: 40%;
+    right: 12%;
+}
+
+.box-30 {
+    background-color: #8990f7;
+    height: 300px;
+    width: 350px;
+
+    bottom: 5%;
+    right: 38%;
+}
+
+.box-31 {
+    background-color: #8990f7;
+    height: 450px;
+    width: 450px;
+
+    top: 40%;
+    left: 10%;
+}
+
+.box-32 {
+    background-image: url(../imgs/taxes.png);
+    height: 300px;
+    width: 600px;
+
+    top: 2%;
+    left: 18%;
+}
+
+.box-33 {
+    background-color: #89eaf7;
+    height: 300px;
+    width: 450px;
+
+    top: 2%;
+    right: 5%;
+}
+
+.box-34 {
+    background-image: url(../imgs/cookie-pope.jpg);background-color: #3e4386;
+    height: 500px;
+    width: 250px;
+
+    top: 15%;
+    right: 18%;
+}
+
+.box-35 {
+    background-color: #232a88;
+    height: 300px;
+    width: 450px;
+
+    top: 40%;
+    right: 40%;
+
+}
+
+/* Shaking Animation ---------------------------------------------------------------*/
+@keyframes shake {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(-10px, 0);
+        rotate: -1deg;
+
+    }
+
+    40% {
+        transform: translate(10px, 0);
+        rotate: 1deg;
+    }
+
+    60% {
+        transform: translate(-10px, 0);
+        rotate: -1deg;
+    }
+
+    80% {
+        transform: translate(10px, 0);
+        rotate: 1deg;
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+/* animation: shake .5s infinite;*/
+
+/* Closing Tab ---------------------------------------------------------------*/
+.ad-bar {
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(211, 209, 209);
+    padding: 5px;
+    padding-right: 8px;
+
+}
+
+.ad-bar p {
+    padding: 0;
+    margin: 0;
+
+    font-size: 14pt;
+
+    text-align: right;
+}
+
+.ad-bar p:hover {
+    cursor: default;
+}
+
+/* Footer ---------------------------------------------------------------*/
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 30px 80px;
+    text-align: right;
+
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
