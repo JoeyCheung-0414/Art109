@@ -25,8 +25,6 @@
 
 /* Ad page ---------------------------------------------------------------*/
 .ad-page {
-    height: 1000px;
-    width: 2000px;
     background-color: black;
 }
 
@@ -35,8 +33,13 @@
 /* Ad Box ---------------------------------------------------------------*/
 .box-div {
 
+    /*height: 100vh;
+    width: 95vw;*/
+
     height: 1000px;
     width: 2000px;
+
+    margin: 0 2.5%;
 
     position: relative;
 }
@@ -85,11 +88,11 @@ div[class^="box-"] {
 
 .box-5 {
     background-color: greenyellow;
-    height: 300px;
-    width: 150px;
+    height: 400px;
+    width: 250px;
 
     top: 2%;
-    left: 15%;
+    left: 05%;
 }
 
 .box-6 {
@@ -219,13 +222,17 @@ div[class^="box-"] {
 }
 
 .box-20 {
-    background-color: rgb(75, 11, 38);
+    background-image: url; 
     height: 500px;
     width: 350px;
 
     top: 10%;
     left: 5%;
+
+    animation: shake-3 .5s infinite;
 }
+
+
 
 .box-21 {
     background-color: red;
@@ -264,25 +271,71 @@ div[class^="box-"] {
 }
 
 .box-25 {
-    background-color: rgb(69, 78, 88);
+    background-image: url(../chaos/imgs/rent.png);
     height: 400px;
     width: 450px;
 
     top: 20%;
     right: 23%;
 }
+.b25-text {
+    margin: 20px;
+    margin-top: 10px;
+}
+.b25-text h1:first-child {
+    text-align: center;
+
+    font-size: 60px;
+    font-weight: bold;
+}
+.b25-text h1 {
+    font-size: 50px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.b25-btn {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
+    background-color: rgb(58, 58, 58);
+    color: aliceblue;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-top: 10px;
+    padding: 10px 40px;
+
+    font-size: 20px;
+
+}
+.b25-btn:hover {
+    display: inline-block;
+    background-color: rgb(81, 134, 214);
+
+    cursor: pointer;
+}
+.b25-btn:active {
+    display: inline-block;
+
+    transition: all .5s;
+    animation: shake-3 .5s 1;
+}
+
+
 
 .box-26 {
-    background-color: rgb(144, 146, 14);
+    background-image: url(../chaos/imgs/gym-member.png);
     height: 300px;
     width: 550px;
 
     bottom: 10%;
     right: 25%;
+
+    animation: stretch-2 1s infinite;
 }
 
 .box-27 {
-    background-color: rgb(0, 247, 255);
+    background-image: url(../chaos/imgs/indeedie-work.png);
     height: 300px;
     width: 450px;
 
@@ -291,16 +344,44 @@ div[class^="box-"] {
 }
 
 .box-28 {
-    background-color: rgb(161, 194, 85);
+    background-image: url(../chaos/imgs/recycle.png);
     height: 400px;
     width: 250px;
 
     top: 35%;
     right: 1%;
 }
+.b28-text {
+    background-color: #ddeedbc0;
+    margin: 15px;
+    padding: 10px;
+}
+.b28-text h4,
+h1 {
+    margin: 0px 10px;
+}
+.b28-text a {
+    display: inline-block;
+    background-color: rgb(5, 129, 47);
+    color: rgb(190, 204, 190);
+    padding: 10px 35px;
+    margin: 10px auto;
+    border-radius: 5px;
+
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.b28-text a:hover {
+
+    background-color: rgb(211, 238, 57);
+    color: rgb(131, 158, 8);
+
+    transition: all 1s;
+}
 
 .box-29 {
-    background-color: rgb(211, 130, 130);
+    background-image: url(../chaos/imgs/lady-pink-diner.png);
     height: 300px;
     width: 450px;
 
@@ -309,25 +390,66 @@ div[class^="box-"] {
 }
 
 .box-30 {
-    background-color: #8990f7;
+    background-image: url(../chaos/imgs/doctor.png);
     height: 300px;
     width: 350px;
 
     bottom: 5%;
     right: 38%;
 }
+.b30-text {
+
+    margin-left: 20px;
+}
+.b30-text h1,h2 {
+    margin: 10px 0px;
+}
+.b30-text h2 {
+    margin-top: 20px;
+}
+.b30-text p {
+    display: inline-block;
+    background-color: rgb(32, 55, 105);
+    color: white;
+
+    margin-top: 95px;
+    padding: 15px 30px;
+    border-radius: 20px;
+
+    font-size: 18px;
+}
+.b30-text p:hover {
+    cursor: pointer;
+    background-color: #82b4fd;
+    color: #0b0f4b;
+
+    transition: all .5s;
+}
 
 .box-31 {
-    background-color: #8990f7;
+    background-image: url(../chaos/imgs/kirby-note.png);
     height: 450px;
     width: 450px;
 
     top: 40%;
     left: 10%;
 }
+.b31-text {
+    color: aliceblue;
+    margin-left: 10px;
+    padding: 10px 20px;
+}
+.b31-text h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+.b31-text ul {
+    font-size: 2rem;
+    margin: 20px 0;
+}
 
 .box-32 {
-    background-image: url(../imgs/taxes.png);
+    background-image: url(../chaos/imgs/taxes.png);
     height: 300px;
     width: 600px;
 
@@ -336,16 +458,19 @@ div[class^="box-"] {
 }
 
 .box-33 {
-    background-color: #89eaf7;
+    background-image: url(../chaos/imgs/duchess.png);
     height: 300px;
     width: 450px;
 
     top: 2%;
     right: 5%;
+
+    animation: shake .5s infinite;
 }
 
 .box-34 {
-    background-image: url(../imgs/cookie-pope.jpg);background-color: #3e4386;
+    background-image: url(../chaos/imgs/cookie-pope.jpg);
+    background-color: #3e4386;
     height: 500px;
     width: 250px;
 
@@ -354,7 +479,7 @@ div[class^="box-"] {
 }
 
 .box-35 {
-    background-color: #232a88;
+    background-color: #424677;
     height: 300px;
     width: 450px;
 
@@ -362,6 +487,90 @@ div[class^="box-"] {
     right: 40%;
 
 }
+.b35-text {
+    text-align: center;
+}
+.b35-text h1 {
+    color: #0b0f4b;
+    margin: 40px 10px;
+    font-size: 55px;
+
+    animation: stretch 2s infinite;
+}
+.b35-text a {
+    display: inline-block;
+    background-color: rgb(241, 191, 96);
+    color: rgb(88, 76, 20);
+    padding: 10px 50px;
+    margin: 20px 0px;
+    border-radius: 5px;
+
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+
+
+    animation: shake-2 1s infinite;
+}
+.b35-text a:hover {
+
+    background-color: rgb(115, 221, 54);
+    color: green;
+
+    transition: all 2s;
+}
+
+/* Other Popups"  ---------------------------------------------------------------*/
+.box-30-reschedule {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    position: absolute;
+
+    background-color: gray;
+    height: 150px;
+    width: 350px;
+
+    bottom: 27%;
+    right: 23%;
+
+    visibility: hidden;
+}
+
+.box-30-reschedule h1 {
+    text-align: center;
+}
+
+
+
+/* Text Stretch Animation ---------------------------------------------------------------*/
+@keyframes stretch {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1, 2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes stretch-2 {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1, .8);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
 
 /* Shaking Animation ---------------------------------------------------------------*/
 @keyframes shake {
@@ -372,7 +581,6 @@ div[class^="box-"] {
     20% {
         transform: translate(-10px, 0);
         rotate: -1deg;
-
     }
 
     40% {
@@ -394,6 +602,61 @@ div[class^="box-"] {
         transform: translate(0, 0);
     }
 }
+
+@keyframes shake-2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(-10px, 0);
+    }
+
+    40% {
+        transform: translate(10px, 5px);
+    }
+
+    60% {
+        transform: translate(-10px, 0);
+    }
+
+    80% {
+        transform: translate(10px, 5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Shaking side to side */
+@keyframes shake-3 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    20% {
+        transform: translate(-10px, 0);
+    }
+
+    40% {
+        transform: translate(10px, 0);
+
+    }
+
+    60% {
+        transform: translate(-10px, 0);
+    }
+
+    80% {
+        transform: translate(10px, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
 /* animation: shake .5s infinite;*/
 
 /* Closing Tab ---------------------------------------------------------------*/
@@ -402,16 +665,16 @@ div[class^="box-"] {
     background-color: rgb(211, 209, 209);
     padding: 5px;
     padding-right: 8px;
-
+    text-align: right;
 }
 
 .ad-bar p {
+    display: inline-block;
     padding: 0;
     margin: 0;
+    padding: 0 10px;
 
     font-size: 14pt;
-
-    text-align: right;
 }
 
 .ad-bar p:hover {
