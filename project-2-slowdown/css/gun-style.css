@@ -1,0 +1,28 @@
+body { 
+    background-color: rgb(141, 202, 202);
+}
+
+.container { 
+    display: flex;
+}
+
+.gun-img { 
+    text-align: center;
+    margin: 20px;
+}
+.gun-img img{ 
+    width: 500px;
+}
+
+.gun-stats{ 
+    margin: 20px;
+}
+.gun-stats h1 { 
+    margin-top: 55px;
+}
+.gun-stats p {
+    line-height: 1.5;
+
+    font-size: 20px;
+
+}

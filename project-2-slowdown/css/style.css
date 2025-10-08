@@ -1,22 +1,43 @@
 /* Home Page  ---------------------------------------------------------------*/
 .start-page {
-    background-color: burlywood;
+    background-image: url(../chaos/imgs/glich-background.jpg);
+    background-size: cover;
+
+    font-family: "Oswald", sans-serif;
+    color: #e5e6fa;
 }
 
 .welcome-text {
     margin: 30vh auto;
     text-align: center;
+    
+}
+
+.welcome-text h1 {
+      font-family: "Michroma", sans-serif;
+}
+
+.welcome-text h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    
 }
 
 .start-button {
     display: inline-block;
-    background-color: blue;
-    border-radius: 10px;
-    padding: 30px 60px;
+    background-color: rgb(62, 155, 241);
+    color: aliceblue;
+    border-radius: 30px;
+    padding: 20px 60px;
+
+    font-size: 25px;
+    text-decoration: none;
+    letter-spacing: 2px;
 }
 
 .start-button:hover {
-    background-color: aqua;
+    background-color: rgb(0, 255, 76);
     transform: scale(1.25);
     transition: all .5s;
 }
@@ -26,22 +47,25 @@
 /* Ad page ---------------------------------------------------------------*/
 .ad-page {
     background-color: black;
+    background-image: url(../chaos/imgs/glich-background.jpg);
+    background-size: 100%;
 }
 
 
 
 /* Ad Box ---------------------------------------------------------------*/
-.box-div {
+.contain-ads {
 
-    /*height: 100vh;
-    width: 95vw;*/
+    height: 100vh;
+    width: 95vw;
 
-    height: 1000px;
-    width: 2000px;
+    /*height: 1000px;
+    width: 2000px;*/
 
     margin: 0 2.5%;
 
     position: relative;
+    border: none;
 }
 
 div[class^="box-"] {
@@ -51,79 +75,92 @@ div[class^="box-"] {
 }
 
 .box-1 {
-    background-color: blue;
+    background-color: rgb(255, 20, 20);
     height: 250px;
     width: 600px;
 
     top: 30%;
-    left: 45%;
+    left: 38%;
+}
+.box-1 a{ 
+    display: block;
+    color: #380700;
+
+    margin: 20px Auto;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 150px;
+    font-family: "Anton", sans-serif;
+
+    animation: shake-3 .5s infinite;
+}
+.box-1 a:hover { 
+    color: #ffffff;
 }
 
 .box-2 {
-    background-color: blueviolet;
-    height: 200px;
+    background-image: url(../chaos/imgs/rotom-laundry.png);
+    height: 300px;
     width: 450px;
 
-    top: 20%;
-    right: 40%;
+    top: 5%;
+    left: 15%;
 }
 
 .box-3 {
-    background-color: aqua;
+    background-image: url(../chaos/imgs/subscription-tv.png);
     height: 400px;
-    width: 250px;
+    width: 550px;
 
-    top: 40%;
-    right: 20%;
+    bottom: 10%;
+    left: 26%;
 }
 
 .box-4 {
-    background-color: palevioletred;
+    background-image: url(../chaos/imgs/fish-news.png);
     height: 300px;
     width: 400px;
 
-    top: 30%;
-    left: 30%;
+    top: 20%;
+    left: 45%;
+
+    animation: shake 1.5s infinite;
 }
 
 .box-5 {
-    background-color: greenyellow;
-    height: 400px;
-    width: 250px;
+    background-image: url(../chaos/imgs/finger-gun.png);
+    height: 300px;
+    width: 550px;
 
-    top: 2%;
-    left: 05%;
+    top: 45%;
+    right: 17%;
+    animation: shake-3 .4s infinite;
+}
+
+.b5-btn {
+    display: inline-block;
+    background-color: #e92525;
+    border-radius: 20px;
+
+    padding: 15px 50px;
+    margin-left: 250px;
+    margin-top: 190px;
+
+    font-size: 25px;
+    text-align: center;
+}
+.b5-btn a {
+    color: white;
+    text-decoration: none;
+}
+.b5-btn:hover { 
+    background-color: rgb(7, 161, 7);
+    transition: all 1s;
 }
 
 .box-6 {
-    background-color: orange;
-    height: 250px;
-    width: 250px;
-
-    top: 15%;
-    left: 20%;
-}
-
-.box-7 {
-    background-color: brown;
-    height: 100px;
-    width: 250px;
-
-    top: 10%;
-    right: 30%;
-}
-
-.box-8 {
-    background-color: red;
-    height: 200px;
-    width: 350px;
-
-    top: 50%;
-    right: 30%;
-}
-
-.box-9 {
-    background-color: rgb(136, 255, 0);
+    background-image: url(../chaos/imgs/surveillance.png);
     height: 300px;
     width: 400px;
 
@@ -131,35 +168,17 @@ div[class^="box-"] {
     right: 5%;
 }
 
-.box-10 {
-    background-color: rgb(196, 107, 156);
-    height: 250px;
-    width: 350px;
+.box-7 {
+    background-image: url(../chaos/imgs/nails-spa.png);
+    height: 350px;
+    width: 450px;
 
-    top: 15%;
-    right: 20%;
+    bottom: 40%;
+    left: 8%;
 }
 
-.box-11 {
-    background-color: rgb(255, 0, 149);
-    height: 300px;
-    width: 250px;
-
-    top: 55%;
-    left: 25%;
-}
-
-.box-12 {
-    background-color: rgb(238, 255, 0);
-    height: 200px;
-    width: 550px;
-
-    top: 60%;
-    left: 5%;
-}
-
-.box-13 {
-    background-color: red;
+.box-8 {
+    background-image: url(../chaos/imgs/breakin.png);
     height: 400px;
     width: 350px;
 
@@ -167,35 +186,40 @@ div[class^="box-"] {
     left: 1%;
 }
 
-.box-14 {
-    background-color: rgb(96, 127, 145);
-    height: 200px;
+.box-9 {
+    background-image: url(../chaos/imgs/shark-loans.png);
+    height: 300px;
     width: 650px;
 
-    top: 36%;
+    top: 30%;
     left: 10%;
 }
 
-.box-15 {
-    background-color: rgb(226, 184, 184);
+.box-10 {
+    background-image: url(../chaos/imgs/daycare.png);
     height: 450px;
     width: 350px;
 
-    top: 5%;
+    top: 1%;
     right: 35%;
 }
 
-.box-16 {
-    background-color: rgb(73, 158, 23);
-    height: 150px;
+.box-11 {
+    background-image: url(../chaos/imgs/overwhelmed.png);
+    height: 250px;
     width: 450px;
 
-    top: 65%;
-    right: 45%;
+    top: 55%;
+    right: 47%;
+
+     animation: shake-2 1s infinite;
+}
+.b11-img {
+    animation: shake .5s infinite;
 }
 
-.box-17 {
-    background-color: red;
+.box-12 {
+    background-image: url(../chaos/imgs/game.png);
     height: 350px;
     width: 350px;
 
@@ -203,17 +227,32 @@ div[class^="box-"] {
     right: 10%;
 }
 
-.box-18 {
-    background-color: red;
-    height: 200px;
-    width: 200px;
+.b12-text{ 
+    background-color: rgb(221, 40, 167);
+    color: aliceblue;
+    display: inline-block;
 
-    top: 1%;
-    left: 30%;
+    opacity: 90%;
+
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 0 15px;
+
+    border-radius: 20px;
+    text-decoration: underline;
+
+    cursor: pointer;
+}
+.b12-text h3 {
+    opacity: 100%;
+}
+.b12-text:hover {
+    background-color: rgb(182, 21, 61);
+    transition: all .5s;
 }
 
-.box-19 {
-    background-color: rgb(30, 145, 139);
+.box-13 {
+    background-image: url(../chaos/imgs/chicken.png);
     height: 300px;
     width: 600px;
 
@@ -221,8 +260,8 @@ div[class^="box-"] {
     left: 1%;
 }
 
-.box-20 {
-    background-image: url; 
+.box-14 {
+    background-image: url(../chaos/imgs/vote.png);
     height: 500px;
     width: 350px;
 
@@ -232,10 +271,8 @@ div[class^="box-"] {
     animation: shake-3 .5s infinite;
 }
 
-
-
-.box-21 {
-    background-color: red;
+.box-15 {
+    background-image: url(../chaos/imgs/therapy.png);
     height: 300px;
     width: 350px;
 
@@ -243,34 +280,44 @@ div[class^="box-"] {
     right: 60%;
 }
 
-.box-22 {
-    background-color: rgb(94, 59, 14);
+.box-16 {
+    background-image: url(../chaos/imgs/pet-grooming.png);
     height: 300px;
     width: 250px;
 
-    top: 1%;
-    right: 30%;
+    top: 5%;
+    right: 28%;
 }
 
-.box-23 {
-    background-color: rgb(234, 0, 255);
-    height: 200px;
-    width: 350px;
-
-    top: 45%;
-    right: 45%;
-}
-
-.box-24 {
-    background-color: rgb(136, 29, 207);
+.box-17 {
+    background-image: url(../chaos/imgs/plumber.png);
     height: 400px;
     width: 350px;
+
+    font-family: "Tiny5", sans-serif;
+    letter-spacing: 5px;
 
     top: 11%;
     right: 3%;
 }
 
-.box-25 {
+.b17-text {
+    text-align: center;
+    margin-top: 280px;
+}
+
+.b17-text h1 {
+    display: inline-block;
+    background-color: rgb(71, 202, 71);
+    padding: 15px 40px;
+    margin: 0 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    animation: shake .5s infinite;
+}
+
+.box-18 {
     background-image: url(../chaos/imgs/rent.png);
     height: 400px;
     width: 450px;
@@ -278,22 +325,26 @@ div[class^="box-"] {
     top: 20%;
     right: 23%;
 }
-.b25-text {
+
+.b18-text {
     margin: 20px;
     margin-top: 10px;
 }
-.b25-text h1:first-child {
+
+.b18-text h1:first-child {
     text-align: center;
 
     font-size: 60px;
     font-weight: bold;
 }
-.b25-text h1 {
+
+.b18-text h1 {
     font-size: 50px;
     margin-left: 40px;
     margin-top: 10px;
 }
-.b25-btn {
+
+.b18-btn {
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -308,22 +359,18 @@ div[class^="box-"] {
     font-size: 20px;
 
 }
-.b25-btn:hover {
+
+.b18-btn:hover {
     display: inline-block;
     background-color: rgb(81, 134, 214);
 
     cursor: pointer;
-}
-.b25-btn:active {
-    display: inline-block;
 
     transition: all .5s;
-    animation: shake-3 .5s 1;
+    animation: shake-3 .5s infinite;
 }
 
-
-
-.box-26 {
+.box-19 {
     background-image: url(../chaos/imgs/gym-member.png);
     height: 300px;
     width: 550px;
@@ -334,7 +381,7 @@ div[class^="box-"] {
     animation: stretch-2 1s infinite;
 }
 
-.box-27 {
+.box-20 {
     background-image: url(../chaos/imgs/indeedie-work.png);
     height: 300px;
     width: 450px;
@@ -343,7 +390,7 @@ div[class^="box-"] {
     left: 35%;
 }
 
-.box-28 {
+.box-21 {
     background-image: url(../chaos/imgs/recycle.png);
     height: 400px;
     width: 250px;
@@ -351,28 +398,44 @@ div[class^="box-"] {
     top: 35%;
     right: 1%;
 }
-.b28-text {
+.b21-text {
     background-color: #ddeedbc0;
     margin: 15px;
     padding: 10px;
+
+    font-family: "Shadows Into Light", cursive;
+    letter-spacing: 3px;
 }
-.b28-text h4,
+.b21-text h4,
 h1 {
     margin: 0px 10px;
+    
 }
-.b28-text a {
+.b21-text h1 {
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+.b21-text h4 {
+    font-size: 15px;
+}
+.b21-text ul { 
+    margin: 10px 0px;
+    line-height: 1.3;
+}
+.b21-text a {
     display: inline-block;
     background-color: rgb(5, 129, 47);
     color: rgb(190, 204, 190);
-    padding: 10px 35px;
-    margin: 10px auto;
+    padding: 10px 30px;
+    margin: 5px auto;
     border-radius: 5px;
 
     font-size: 20px;
     text-align: center;
     text-decoration: none;
 }
-.b28-text a:hover {
+.b21-text a:hover {
 
     background-color: rgb(211, 238, 57);
     color: rgb(131, 158, 8);
@@ -380,7 +443,7 @@ h1 {
     transition: all 1s;
 }
 
-.box-29 {
+.box-22 {
     background-image: url(../chaos/imgs/lady-pink-diner.png);
     height: 300px;
     width: 450px;
@@ -389,7 +452,7 @@ h1 {
     right: 12%;
 }
 
-.box-30 {
+.box-23 {
     background-image: url(../chaos/imgs/doctor.png);
     height: 300px;
     width: 350px;
@@ -397,17 +460,22 @@ h1 {
     bottom: 5%;
     right: 38%;
 }
-.b30-text {
+
+.b23-text {
 
     margin-left: 20px;
 }
-.b30-text h1,h2 {
+
+.b23-text h1,
+h2 {
     margin: 10px 0px;
 }
-.b30-text h2 {
+
+.b23-text h2 {
     margin-top: 20px;
 }
-.b30-text p {
+
+.b23-text p {
     display: inline-block;
     background-color: rgb(32, 55, 105);
     color: white;
@@ -418,7 +486,8 @@ h1 {
 
     font-size: 18px;
 }
-.b30-text p:hover {
+
+.b23-text p:hover {
     cursor: pointer;
     background-color: #82b4fd;
     color: #0b0f4b;
@@ -426,29 +495,37 @@ h1 {
     transition: all .5s;
 }
 
-.box-31 {
-    background-image: url(../chaos/imgs/kirby-note.png);
+.box-24 {
+    background-image: url(../chaos/imgs/zhongli-note.png);
     height: 450px;
     width: 450px;
 
     top: 40%;
     left: 10%;
 }
-.b31-text {
+
+.b24-text {
     color: aliceblue;
     margin-left: 10px;
     padding: 10px 20px;
+
+    font-family: "Chewy", system-ui;
+    letter-spacing: 3px;
 }
-.b31-text h1 {
+
+.b24-text h1 {
     font-size: 3rem;
     margin: 20px 0;
+
+    letter-spacing: 5px;
 }
-.b31-text ul {
+
+.b24-text ul {
     font-size: 2rem;
     margin: 20px 0;
 }
 
-.box-32 {
+.box-25 {
     background-image: url(../chaos/imgs/taxes.png);
     height: 300px;
     width: 600px;
@@ -457,7 +534,7 @@ h1 {
     left: 18%;
 }
 
-.box-33 {
+.box-26 {
     background-image: url(../chaos/imgs/duchess.png);
     height: 300px;
     width: 450px;
@@ -468,7 +545,7 @@ h1 {
     animation: shake .5s infinite;
 }
 
-.box-34 {
+.box-27 {
     background-image: url(../chaos/imgs/cookie-pope.jpg);
     background-color: #3e4386;
     height: 500px;
@@ -478,8 +555,8 @@ h1 {
     right: 18%;
 }
 
-.box-35 {
-    background-color: #424677;
+.box-28 {
+    background-image: url(../chaos/imgs/papers.png);
     height: 300px;
     width: 450px;
 
@@ -487,20 +564,26 @@ h1 {
     right: 40%;
 
 }
-.b35-text {
+
+.b28-text {
     text-align: center;
+
+    font-family: "Oswald", sans-serif;
 }
-.b35-text h1 {
-    color: #0b0f4b;
+
+.b28-text h1 {
+    color: #e5e6fa;
     margin: 40px 10px;
     font-size: 55px;
 
     animation: stretch 2s infinite;
 }
-.b35-text a {
+
+.b28-text a {
     display: inline-block;
     background-color: rgb(241, 191, 96);
     color: rgb(88, 76, 20);
+    opacity: 80%;
     padding: 10px 50px;
     margin: 20px 0px;
     border-radius: 5px;
@@ -512,7 +595,8 @@ h1 {
 
     animation: shake-2 1s infinite;
 }
-.b35-text a:hover {
+
+.b28-text a:hover {
 
     background-color: rgb(115, 221, 54);
     color: green;
@@ -521,7 +605,7 @@ h1 {
 }
 
 /* Other Popups"  ---------------------------------------------------------------*/
-.box-30-reschedule {
+.box-23-reschedule {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
     position: absolute;
@@ -536,8 +620,13 @@ h1 {
     visibility: hidden;
 }
 
-.box-30-reschedule h1 {
+.box-23-reschedule h1 {
     text-align: center;
+    margin-top: 20px;
+
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    letter-spacing: 1px;
 }
 
 
@@ -678,7 +767,7 @@ h1 {
 }
 
 .ad-bar p:hover {
-    cursor: default;
+    cursor: pointer;
 }
 
 /* Footer ---------------------------------------------------------------*/
@@ -687,9 +776,23 @@ footer {
     bottom: 0;
     right: 0;
     margin: 30px 80px;
+    
+    font-family: "Oswald", sans-serif;
     text-align: right;
 
-    background-color: blue;
+    background-color: rgb(83, 83, 233);
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 8px 40px;
+
+    cursor: pointer;
+}
+
+footer a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+footer:hover { 
+    background-color: #e92525;
+    transition: .5s;
 }
