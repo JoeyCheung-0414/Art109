@@ -1,4 +1,4 @@
-console.log("Hello Hello");
+console.log("If you are see this, you shouldn't be looking at peoples code! :P Is private, Dear Hacker!");
 
 
 //Closing Ads---------------------------------------//
@@ -29,4 +29,6 @@ document.querySelector(".btn-reschedule").addEventListener("click", function () 
 document.querySelector(".b28-error").addEventListener("click", function () {
     alert("Oh No, I Don't have the Energy To Work... ")
 })
+
+
 

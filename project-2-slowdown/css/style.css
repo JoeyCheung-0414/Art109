@@ -10,18 +10,18 @@
 .welcome-text {
     margin: 30vh auto;
     text-align: center;
-    
+
 }
 
 .welcome-text h1 {
-      font-family: "Michroma", sans-serif;
+    font-family: "Michroma", sans-serif;
 }
 
 .welcome-text h2 {
     margin: 0;
     margin-bottom: 20px;
     text-align: center;
-    
+
 }
 
 .start-button {
@@ -82,7 +82,8 @@ div[class^="box-"] {
     top: 30%;
     left: 38%;
 }
-.box-1 a{ 
+
+.box-1 a {
     display: block;
     color: #380700;
 
@@ -95,7 +96,8 @@ div[class^="box-"] {
 
     animation: shake-3 .5s infinite;
 }
-.box-1 a:hover { 
+
+.box-1 a:hover {
     color: #ffffff;
 }
 
@@ -150,11 +152,13 @@ div[class^="box-"] {
     font-size: 25px;
     text-align: center;
 }
+
 .b5-btn a {
     color: white;
     text-decoration: none;
 }
-.b5-btn:hover { 
+
+.b5-btn:hover {
     background-color: rgb(7, 161, 7);
     transition: all 1s;
 }
@@ -212,8 +216,9 @@ div[class^="box-"] {
     top: 55%;
     right: 47%;
 
-     animation: shake-2 1s infinite;
+    animation: shake-2 1s infinite;
 }
+
 .b11-img {
     animation: shake .5s infinite;
 }
@@ -227,7 +232,7 @@ div[class^="box-"] {
     right: 10%;
 }
 
-.b12-text{ 
+.b12-text {
     background-color: rgb(221, 40, 167);
     color: aliceblue;
     display: inline-block;
@@ -243,9 +248,11 @@ div[class^="box-"] {
 
     cursor: pointer;
 }
+
 .b12-text h3 {
     opacity: 100%;
 }
+
 .b12-text:hover {
     background-color: rgb(182, 21, 61);
     transition: all .5s;
@@ -398,6 +405,7 @@ div[class^="box-"] {
     top: 35%;
     right: 1%;
 }
+
 .b21-text {
     background-color: #ddeedbc0;
     margin: 15px;
@@ -406,11 +414,13 @@ div[class^="box-"] {
     font-family: "Shadows Into Light", cursive;
     letter-spacing: 3px;
 }
+
 .b21-text h4,
 h1 {
     margin: 0px 10px;
-    
+
 }
+
 .b21-text h1 {
     font-size: 25px;
     line-height: 1.3;
@@ -419,10 +429,12 @@ h1 {
 .b21-text h4 {
     font-size: 15px;
 }
-.b21-text ul { 
+
+.b21-text ul {
     margin: 10px 0px;
     line-height: 1.3;
 }
+
 .b21-text a {
     display: inline-block;
     background-color: rgb(5, 129, 47);
@@ -435,6 +447,7 @@ h1 {
     text-align: center;
     text-decoration: none;
 }
+
 .b21-text a:hover {
 
     background-color: rgb(211, 238, 57);
@@ -770,13 +783,13 @@ h2 {
     cursor: pointer;
 }
 
-/* Footer ---------------------------------------------------------------*/
-footer {
+/* Footer AD-Page ---------------------------------------------------------------*/
+.ad-page footer {
     position: fixed;
     bottom: 0;
     right: 0;
     margin: 30px 80px;
-    
+
     font-family: "Oswald", sans-serif;
     text-align: right;
 
@@ -787,12 +800,149 @@ footer {
     cursor: pointer;
 }
 
-footer a{
+.ad-page footer a {
     color: aliceblue;
     text-decoration: none;
 }
 
-footer:hover { 
+.ad-page footer:hover {
     background-color: #e92525;
+    transition: .5s;
+}
+
+/* Calm Page
+---------------------------------------------------------------*/
+.calm-page {
+    font-family: "Comic Relief", system-ui;
+    background-color: #90e0a8;
+    background-image: url(../calm/img/leafy.png);
+    background-size: 400px;
+    background-repeat: repeat;
+}
+
+.calm-containers { 
+    text-transform: capitalize;
+    margin: 5px;
+}
+
+.calm-containers h1 {
+    font-family: "Sue Ellen Francisco", "Dekko", cursive;
+    font-size: 2.5rem;
+    line-height: 1.5;
+}
+
+.calm-containers h2 {
+    font-family: "Comic Relief", system-ui;
+    font-size: 20px;
+}
+
+.cbox {
+    box-sizing: border-box;
+    background-color: rgb(91, 197, 118);
+
+    width: 400px;
+    height: 300px;
+    border: solid 15px rgb(77, 175, 101);
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 10px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    margin: 0;
+
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.cbox.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.c-img{ 
+    width: 100%;
+    height: 70%;
+    text-align: center;
+
+    border-radius: 15px;
+}
+
+.c-close-btn {
+    background-color: #90e0a8;
+    padding: 10px 30px;
+    margin: 0;
+    border-radius: 40px;
+
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: rgb(14, 85, 5);
+    font-family: serif;
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+.c-close-btn:hover {
+    background-color: #deffa0;
+
+    transition: all .5s;
+}
+
+.c-again { 
+    background-color: #90e0a8;
+    padding: 10px 30px;
+    margin: 0;
+    border-radius: 40px;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: rgb(14, 85, 5);
+    font-size: 19px;
+}
+
+.c-again:hover {
+    background-color: #deffa0;
+
+    transition: all .5s;
+}
+
+
+/* Footer Calm
+---------------------------------------------------------------*/
+.replay-btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 30px 80px;
+
+    text-align: right;
+
+    background-color:rgb(91, 197, 118);
+    border-radius: 10px;
+    padding: 8px 40px;
+
+    cursor: pointer;
+}
+
+.replay-btn a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.replay-btn:hover {
+    background-color:#7ab9f3;
+
     transition: .5s;
 }
