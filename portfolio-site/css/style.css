@@ -295,7 +295,6 @@ footer p {
 
 
 /* Nav Bar */
-
 /* styles.css */
 * {
     margin: 0;
@@ -341,7 +340,7 @@ footer p {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #ffffff;
+    color: #e0e0e0;
     /* Lighter color for active/hover */
     background-color: #65b0e2;
     /* Darker green background on hover */
@@ -372,7 +371,7 @@ footer p {
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: #ade5ff;
+        background-color:  #ade5ff;
         /* Green background for mobile view */
     }
 
