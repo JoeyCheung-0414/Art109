@@ -30,20 +30,4 @@ const controls = new OrbitControls(camera, renderer.domElement);
 // →→→→→→ Follow next steps in tutorial: 
 // // https://threejs.org/docs/#manual/en/introduction/Creating-a-scene
 
-const geometry = new THREE.BoxGeometry(3, 3, 3);
-const material = new THREE.MeshBasicMaterial({ color: a3eaff });
-const cube = new THREE.Mesh(geometry, material);
-scene.add(cube);
 
-camera.position.z = 5;
-
-function animate() {
-    requestAnimationFrame(animate);
-
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
-
-    renderer.render(scene, camera);
-}
-
-animate();
