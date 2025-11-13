@@ -1,0 +1,21 @@
+{
+  "name": "10-p5-starter",
+  "version": "1.0.0",
+  "description": "Tutorial on Node Js",
+  "keywords": [
+    "starter",
+    "Node.js",
+    "p5.js"
+  ],
+  "license": "ISC",
+  "author": "Joey Cheung",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
