@@ -12,7 +12,7 @@ function setup() {
 
 function NewDrawing(data){ 
     noStroke()
-    fill(255, 25, 200);
+    fill(162, 224, 250);
     ellipse(data.x, data.y, 36, 36);
 }
 
@@ -26,7 +26,7 @@ function mouseDragged() {
     socket.emit('mouse', data);
 
     noStroke();
-    fill(255);
+    fill(194, 252, 201);
     ellipse(mouseX, mouseY, 36, 36);
 }
 
