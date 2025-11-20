@@ -1,0 +1,74 @@
+
+
+/* Whole Doc  ---------------------------------------------------------------------------------*/
+html {
+    font-size: 62.5%;
+    /*Rem= 10 px
+        Ex. 
+        5px = .5 rem
+        20px =  2rem*/
+
+    background-image: url(assets/cat-background.jpg);
+    background-size: 140%;
+    background-size: repeat;
+}
+
+
+/* Header
+---------------------------------------------------------------------------------*/
+header {
+    background-color: #84c6ec;
+    padding: 1.5rem;
+}
+
+nav img { 
+    width: 6rem;
+}
+
+.logo { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a {
+     text-decoration: none;
+}
+
+.logo h1 { 
+    margin: 0;
+    margin-left: 1rem;
+    color: #1c1363;
+
+    font-family: "Jersey 10", sans-serif;
+    font-size: 4rem;
+    font-weight: 350;
+    letter-spacing: .1rem;
+} 
+
+
+/* Footer
+---------------------------------------------------------------------------------*/
+footer {
+    background-color: #84c6ec;
+}
+
+.foot-container {
+    width: 100vw;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+
+    align-items: center;
+    text-align: center;
+}
+
+footer h3 {
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+footer img {
+    width: 4rem;
+}

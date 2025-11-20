@@ -1,0 +1,102 @@
+
+
+/* Whole Doc  ---------------------------------------------------------------------------------*/
+html {
+    background-image: url(assets/cat-background-black.jpg);
+    background-size: 140%;
+    background-size: repeat;
+
+     font-size: 62.5%;
+    /*Rem= 10 px
+        Ex. 
+        5px = .5 rem
+        20px =  2rem*/
+    font-family:  "Patrick Hand", sans-serif;
+
+}
+
+
+/* Header
+---------------------------------------------------------------------------------*/
+header {
+    background-color: #521111;
+    padding: 1.5rem;
+}
+
+nav img { 
+    width: 6rem;
+}
+
+.logo { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a {
+     text-decoration: none;
+}
+
+.logo h1 { 
+    margin: 0;
+    margin-left: 1rem;
+    color: #ffffff;
+
+    font-family: "Jersey 10", sans-serif;
+    font-size: 4rem;
+    font-weight: 350;
+    letter-spacing: .1rem;
+} 
+
+/* Main
+---------------------------------------------------------------------------------*/
+
+main { 
+    padding: 2rem 5rem;
+    align-items: center;
+    text-align: center;
+}
+
+main img { 
+    border: 1rem solid #b13636;
+    border-radius: .5rem;
+}
+
+
+p {
+    color: white;
+
+    font-size: 4rem;
+    font-family: "Just Me Again Down Here", cursive;
+    line-height: 3.5rem;
+    text-align: left;
+}
+
+
+
+/* Footer
+---------------------------------------------------------------------------------*/
+footer {
+    background-color: #521111;
+}
+
+.foot-container {
+    padding: 1rem 3rem;
+    margin: 0 auto;
+
+    align-items: center;
+    text-align: center;
+}
+
+footer h3 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+footer img {
+    width: 4rem;
+}
