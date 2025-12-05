@@ -20,6 +20,12 @@ body {
 main {
     background-color: rgb(181, 212, 149);
     text-align: center;
+
+    height: 90vh;
+}
+
+p {
+    cursor: default;
 }
 
 /* Footer
@@ -92,7 +98,7 @@ footer p {
 section[class^="text-box-"] {
     border: 2px solid rgb(0, 0, 0);
     border-radius: .5rem;
-    background-color: rgba(21, 14, 124, 0.8);
+    background-color: rgb(83, 75, 199);
 
     position: absolute;
     top: 40%;
@@ -116,6 +122,16 @@ section[class^="text-box-"] {
     }
 }
 
+textarea {
+    margin: 1rem;
+    width: 80%;
+}
+
+input[type="text"] {
+    margin: 1rem;
+    width: 80%;
+}
+
 h2[class^="dot-btn-"] {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 5rem;
@@ -124,9 +140,11 @@ h2[class^="dot-btn-"] {
     width: 10rem;
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 1.5rem;
+    padding: 1rem 1.5rem;
 
     cursor: pointer;
+
+    font-size: 2.5rem;
 }
 
 h2[class^="dot-btn-"]:hover {
@@ -134,37 +152,46 @@ h2[class^="dot-btn-"]:hover {
     transition: background-color 0.5s ease;
 }
 
-section[class^="play-"] h1 {
-    visibility: hidden;
+.play-1, .play-2{ 
+    display: none;
+    
+}
 
+section[class^="play-"] h1 {
     border-radius: .5rem;
 
-    position: absolute;
+    position:absolute;
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
 
     margin: 2rem;
     padding: 2rem;
+
+    cursor: default;
 }
 
 div[class^="choice-"] {
     border: 2px solid rgb(0, 0, 0);
     border-radius: 0.5rem;
-    background-color: rgb(221, 151, 22);
-
     position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     margin: 0;
     padding: 2rem;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    visibility: hidden;
+}
+
+.choice-1 {
+    background-color: rgb(252, 212, 178);
+}
+
+.choice-1, .choice-2 { 
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 div[class^="genre-box-"] {
@@ -172,11 +199,18 @@ div[class^="genre-box-"] {
     border-radius: 0.5rem;
     background-color: rgba(153, 104, 231, 0.8);
 
-    margin: 1rem;
+    margin: 1.5rem;
     padding: 2rem;
 
-    width: 50rem;
+    width: 60rem;
     height: 30rem;
+}
+
+div[class^="genre-box-"]:hover {
+    transform: scale(110%);
+    transition: all 0.5s ease;
+
+    cursor: pointer;
 }
 
 @media screen and (min-width:1300px) {
@@ -184,7 +218,7 @@ div[class^="genre-box-"] {
         top: 5%;
     }
 
-    div[class^="choice-"] {
+    .choice-1 {
         width: 95rem;
     }
 
@@ -196,10 +230,25 @@ div[class^="genre-box-"] {
 
 @media screen and (max-width:1299px) {
     section[class^="play-"] h1 {
-        top: 10%;
+        top: 5%;
     }
 
-    div[class^="choice-"] {
+    .choice-1 {
+        width: 95rem;
+    }
+
+    div[class^="genre-box-"] {
+        width: 40rem;
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    section[class^="play-"] h1 {
+        top: 5%;
+    }
+
+    .choice-1 {
         width: 80rem;
     }
 
@@ -209,25 +258,10 @@ div[class^="genre-box-"] {
     }
 }
 
-@media screen and (max-width:900px) {
-    section[class^="play-"] h1 {
-        top: 10%;
-    }
-
-    div[class^="choice-"] {
-        width: 60rem;
-    }
-
-    div[class^="genre-box-"] {
-        width: 20rem;
-        height: 10rem;
-    }
-}
-
 @media screen and (max-width:650px) {
 
     #genre-page main {
-        height: 100vh;
+        height: 130vh;
     }
 
     section[class^="play-"] h1 {
@@ -236,13 +270,152 @@ div[class^="genre-box-"] {
         padding: 0;
     }
 
-    div[class^="choice-"] {
-        top: 60%;
+    .choice-1 {
+        top: 70%;
         width: 40rem;
     }
 
     div[class^="genre-box-"] {
-        width: 20rem;
-        height: 10rem;
+        width: 30rem;
+        height: 15rem;
     }
+}
+
+.branch-1 {
+    visibility: hidden;
+}
+
+section[class^="text-box-2-op-"] a {
+    display: block;
+
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5rem;
+    background-color: rgba(222, 231, 99, 0.8);
+
+    width: 10rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+section[class^="text-box-2-op-"] a:hover {
+    background-color: rgb(71, 180, 95);
+    transition: background-color 0.5s ease;
+}
+
+/* Artist Page
+-------------------------------------------------------------------------- */
+#artist-page main {
+    background-color: blue;
+}
+
+div[class^="genre-box-a"] {
+    box-sizing: border-box;
+
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    background-color: rgba(134, 231, 104, 0.89);
+
+    margin: 2rem;
+    padding: 2rem;
+
+}
+
+.choice-2 {
+    background-color: rgb(245, 114, 0);
+}
+
+
+@media screen and (min-width:1300px) {
+    .choice-2 {
+        width: 120rem;
+    }
+
+    div[class^="genre-box-a"] {
+        width: 50rem;
+        height: 50rem;
+    }
+}
+
+@media screen and (max-width:1299px) {
+    #artist-page main {
+        height: 160vh;
+    }
+
+    .choice-2 {
+        background-color: rgba(0, 255, 255, 0.767);
+        width: 95rem;
+    }
+
+    div[class^="genre-box-a"] {
+        width: 40rem;
+        height: 40rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    #artist-page main {
+        height: 110vh;
+    }
+
+    .choice-2 {
+        top:65%;
+        width: 60rem;
+    }
+
+    div[class^="genre-box-a"] {
+        width: 40rem;
+        height: 40rem;
+    }
+
+
+}
+
+@media screen and (max-width:650px) {
+    #artist-page main {
+        height: 110vh;
+    }
+
+    .play-2 h1 {
+        top: 5%;
+    }
+
+    .choice-2 {
+        top: 65%;
+        width: 40rem;
+    }
+
+    div[class^="genre-box-a"] {
+        width: 35rem;
+        height: 35rem;
+    }
+
+
+}
+
+.route-1, .route-2 {
+    display: none;
+}
+
+/* Gaming Page
+-------------------------------------------------------------------------- */
+#gaming-page main {
+    background-color: green;
+}
+
+/* Makeup Page
+-------------------------------------------------------------------------- */
+#makeup-page main {
+    background-color: pink;
+}
+
+/* Lifestyle Page
+-------------------------------------------------------------------------- */
+#lifestyle-page main {
+    background-color: purple;
 }
