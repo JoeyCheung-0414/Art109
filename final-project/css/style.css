@@ -25,6 +25,8 @@ body {
 main {
     background-color: rgb(143, 160, 253);
     height: 90vh;
+    background-size: cover;
+    background-position: center;
 }
 
 h1,
@@ -46,12 +48,14 @@ p {
 
 footer {
     box-sizing: border-box;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(80, 80, 80);
     padding: 1.5rem 3rem;
 
     display: flex;
     justify-content: right;
     align-items: right;
+
+    color: white;
 }
 
 .logo {
@@ -142,7 +146,6 @@ footer p {
     width: 80%;
     padding: 3rem 5rem;
 
-    background-color: white;
     border-radius: 1rem;
 
     margin: 0;
@@ -152,8 +155,11 @@ footer p {
     transform: translate(-50%, -50%);
 
     text-align: center;
-
     cursor: pointer;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.459);
+    /*REMOVE lATER*/
 }
 
 .text-box a {
@@ -204,9 +210,7 @@ textarea {
 
 
 .close {
-    border: 2px solid rgb(0, 0, 0);
     border-radius: 5rem;
-    background-color: rgba(222, 231, 99, 0.8);
 
     width: 10rem;
     text-align: center;
@@ -216,26 +220,41 @@ textarea {
     cursor: pointer;
 
     font-size: 2.5rem;
+
+    background-color: rgb(99, 145, 231);
+    /*REMOVE lATER*/
+
 }
 
 .close:hover {
-    background-color: rgb(13, 0, 200);
+    background-color: rgb(100, 235, 123);
     color: white;
     transition: background-color 0.5s ease;
+
+    /*REMOVE lATER?*/
 }
 
 /* Choice / Options
 -------------------------------------------------------------------------- */
 .choice-container {
-    background-color: blue;
+    box-sizing: content-box;
     margin: 0;
+    padding: 2rem;
+
+    border-radius: .5rem;
 
     text-align: center;
 
-    padding: 1rem 0rem;
-
+    color: rgb(48, 48, 48);
+    background-color: rgba(196, 196, 196, 0.6)
 }
 
+@media screen and (max-width:849px) {
+
+    .choice-container {
+        width: 100%;
+    }
+}
 
 .options-container {
     width: 100%;
@@ -264,12 +283,10 @@ textarea {
     }
 }
 
-
-
 .option-c4 {
     box-sizing: border-box;
 
-    background-color: lightpink;
+    background-color: rgb(176, 248, 230);
     border-radius: .5rem;
 
     width: 40rem;
@@ -297,21 +314,19 @@ textarea {
 
 .option-c2 {
     box-sizing: border-box;
-
-    background-color: lightpink;
-    border-radius: .5rem;
-
-    width: 40rem;
-    height: 40rem;
-
-    cursor: pointer;
-
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
 
+    width: 40rem;
+    height: 40rem;
 
+    background-color: rgb(176, 195, 248);
+    border-radius: .5rem;
+
+    cursor: pointer;
+
+    text-align: center;
 }
 
 
@@ -324,21 +339,28 @@ textarea {
 
 .option-c4:hover,
 .option-c2:hover {
-    background-color: rgb(13, 0, 200);
+    background-color: rgb(143, 135, 250);
     transform: scale(1.05);
     transition: all 0.5s ease;
+}
+
+.op1,
+.op2,
+.op3,
+.op4 {
+    background-size: cover;
+    background-position: center;
 }
 
 
 /* music control
 -------------------------------------------------------------------------- */
-
 .music-control {
     align-items: left;
     padding: 1rem;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:850px) {
     .music-control {
         text-align: center;
     }
@@ -363,11 +385,7 @@ textarea {
 
     width: 70%;
     height: 60%;
-
-
 }
-
-
 
 .route-box a {
     display: block;
@@ -375,7 +393,6 @@ textarea {
 
     width: 25rem;
     padding: 1rem 0rem;
-
 }
 
 .rb-text {
@@ -385,13 +402,47 @@ textarea {
     text-align: center;
 }
 
-
-
 /* Genre Page 
 -------------------------------------------------------------------------- */
 #genre-page main {
-    background-color: rgb(156, 125, 241);
+    background-image: linear-gradient(rgba(104, 104, 104, 0.767), rgb(0, 0, 0, .9)), url(../assets/genre-imgs/camrea-4928x3264.jpg);
 }
+
+#genre-page .text-box, #genre-page .branch-1 a
+#genre-page .choice-container {
+    color: rgb(48, 48, 48);
+    background-color: rgba(196, 196, 196, 0.6);
+}
+
+#genre-page .options-container{ 
+    color: white;
+}
+
+#genre-page .close {
+    background-color: rgba(247, 247, 247, 0.6);
+}
+
+#genre-page .close:hover {
+    background-color: rgba(73, 73, 73, 0.8);
+}
+
+#genre-page .op1 {
+    background-image: linear-gradient(-45deg, rgba(75, 45, 0, 0.829), rgba(158, 126, 77, 0.801)), url(../assets/genre-imgs/art-room-6000x4000.jpg);
+}
+
+#genre-page .op2 {
+    background-image: linear-gradient(-45deg, rgba(88, 2, 88, 0.705), rgba(23, 37, 165, 0.603)), url(../assets/genre-imgs/gaming-setup-6720x4480.jpg);
+}
+
+#genre-page .op3 {
+    background-image: linear-gradient(-45deg, rgba(48, 0, 18, 0.9), rgba(202, 106, 170, 0.801)), url(../assets/genre-imgs/makeup-5472x3648.jpg);
+    
+}
+
+#genre-page .op4 {
+    background-image: linear-gradient(-45deg, rgba(0, 83, 28, 0.705), rgba(10, 81, 122, 0.603)), url(../assets/genre-imgs/vlog-5472x3648.jpg);
+}
+
 
 @media screen and (max-width:800px) {
     #genre-page main {
@@ -402,7 +453,61 @@ textarea {
 /* Art Page
 -------------------------------------------------------------------------- */
 #art-page main {
-    background-color: rgb(209, 255, 182);
+    background-image: linear-gradient(rgba(119, 99, 34, 0.7), rgba(77, 27, 14, 0.7)), url(../assets/art-imgs/studio-4928x3264.jpg);
+}
+
+#art-page .text-box,
+#art-page .choice-container {
+    color: white;
+    background-color: rgba(46, 25, 0, 0.7);
+}
+
+#art-page .close {
+    background-color: rgba(84, 172, 76, 0.6);
+}
+
+#art-page .close:hover {
+    background-color: rgba(76, 200, 238, 0.8);
+}
+
+#art-page .op1 {
+    background-image: linear-gradient(-45deg, rgba(15, 8, 19, 0.9), rgba(55, 10, 216, 0.801)), url(../assets/art-imgs/digital-5978x4000.jpg);
+    background-size: 80rem;
+}
+
+#art-page .op2 {
+    background-image: linear-gradient(-45deg, rgba(95, 86, 7, 0.705), rgba(16, 104, 155, 0.603)), url(../assets/art-imgs/papercutouts-4660x3001.jpeg);
+}
+
+#art-page .route-1 .route-box,
+#art-page .route-1 .route-box a {
+    background-color: rgb(50, 72, 114);
+    color: rgb(179, 185, 212);
+}
+
+#art-page .route-1 .route-box .close {
+    background-color: rgba(144, 188, 238, 0.74);
+    color: rgb(50, 72, 114);
+}
+
+#art-page .route-1 .route-box .close:hover {
+    background-color: rgba(100, 235, 205, 0.74);
+    color: rgb(50, 72, 114);
+}
+
+#art-page .route-2 .route-box,
+#art-page .route-2 .route-box a {
+    background-color: rgb(221, 201, 145);
+    color: rgb(116, 56, 0);
+}
+
+#art-page .route-2 .route-box .close {
+    background-color: rgba(172, 119, 6, 0.6);
+}
+
+#art-page .route-2 .route-box .close:hover {
+    background-color: rgba(26, 121, 69, 0.6);
+    color: rgb(2, 73, 34);
 }
 
 @media screen and (max-width:850px) {
@@ -419,21 +524,181 @@ textarea {
 /* Game Page 
 -------------------------------------------------------------------------- */
 #game-page main {
-    background-color: rgb(86, 75, 233);
+    background-image: linear-gradient(rgba(135, 0, 168, 0.5), rgba(17, 2, 71, 0.5)), url(../assets/gaming-imgs/city-5760x3240.jpeg);
+}
+
+#game-page .text-box,
+#game-page .choice-container {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+#game-page .close {
+    background-color: rgba(208, 120, 230, 0.6);
+}
+
+#game-page .close:hover {
+    background-color: rgba(76, 200, 238, 0.8);
+}
+
+#game-page .op1 {
+    background-image: linear-gradient(-45deg, rgba(0, 168, 76, 0.5), rgba(54, 10, 216, 0.5)), url(../assets/gaming-imgs/minecarft-2200x1100.png);
+    background-size: 80rem;
+}
+
+#game-page .op2 {
+    background-image: linear-gradient(-45deg, rgba(0, 168, 76, 0.5), rgba(0, 162, 255, 0.603)), url(../assets/gaming-imgs/contorls-4815x3115.jpeg);
+}
+
+#game-page .route-1 .route-box,
+#game-page .route-1 .route-box a {
+    background-color: rgb(100, 185, 100);
+    color: rgb(0, 75, 0);
+}
+
+#game-page .route-1 .route-box .close {
+    background-color: rgba(0, 99, 21, 0.6);
+}
+
+#game-page .route-1 .route-box .close:hover {
+    background-color: rgba(239, 255, 242, 0.6);
+    color: rgb(0, 75, 0);
+}
+
+#game-page .route-2 .route-box,
+#game-page .route-2 .route-box a {
+    background-color: rgb(165, 111, 214);
+    color: rgb(45, 2, 73);
+}
+
+#game-page .route-2 .route-box .close {
+    background-color: rgba(248, 229, 255, 0.6);
+}
+
+#game-page .route-2 .route-box .close:hover {
+    background-color: rgba(245, 143, 248, 0.6);
+    color: rgb(45, 2, 73);
 }
 
 
 /* Makeup Page 
 -------------------------------------------------------------------------- */
-#makeup-page {
-    background-color: rgb(245, 188, 221);
+#makeup-page main {
+    background-image: linear-gradient(rgba(255, 156, 250, 0.5), rgba(124, 15, 15, 0.5)), url(../assets/makeup-img/makeup-bg-67020x4480.jpeg);
+}
+
+#makeup-page .text-box,
+#makeup-page .choice-container {
+    color: white;
+    background-color: rgba(134, 18, 18, 0.85);
+}
+
+#makeup-page .close {
+    background-color: rgba(243, 64, 183, 0.6);
+}
+
+#makeup-page .close:hover {
+    background-color: rgba(241, 180, 138, 0.8);
+}
+
+#makeup-page .op1 {
+    background-image: linear-gradient(rgba(245, 192, 94, 0.6), rgba(151, 0, 0, 0.6)), url(../assets/makeup-img/makeuo-look-38040x3840.jpg);
+}
+
+#makeup-page .op2 {
+    background-image: linear-gradient(rgba(245, 192, 94, 0.6), rgba(151, 0, 0, 0.6)), url(../assets/makeup-img/swatching.jpeg);
+    background-size: 60rem;
+}
+
+#makeup-page .route-1 .route-box,
+#game-page .route-1 .route-box a {
+    background-color: rgb(255, 149, 107);
+    color: rgb(114, 1, 1);
+}
+
+#makeup-page .route-1 .route-box .close {
+    background-color: rgba(209, 80, 6, 0.6);
+}
+
+#makeup-page .route-1 .route-box .close:hover {
+    background-color: rgba(250, 202, 196, 0.6);
+    color: rgb(114, 1, 1);
+}
+
+#makeup-page .route-2 .route-box,
+#makeup-page .route-2 .route-box a
+ {
+    background-color: rgb(179, 17, 65);
+    color: rgb(73, 2, 2);
+}
+
+#makeup-page .route-2 .route-box .close {
+    background-color: rgba(248, 229, 255, 0.6);
+}
+
+#makeup-page .route-2 .route-box .close:hover {
+    background-color: rgba(245, 143, 248, 0.6);
+    color: rgb(73, 2, 2);
 }
 
 
 /* LifeStyleW Page 
 -------------------------------------------------------------------------- */
-#lifestyle-page {
-    background-color: rgb(68, 163, 5);
+#lifestyle-page main {
+    background-image: linear-gradient(rgba(107, 180, 135, 0.7), rgba(38, 119, 121, 0.7)), url(../assets/lifestyle-imgs/kitchen-4596x3044.jpg);
+}
+
+#lifestyle-page .text-box,
+#lifestyle-page .choice-container {
+    color: white;
+    background-color: rgba(1, 26, 73, 0.75);
+}
+
+#lifestyle-page .close {
+    background-color: rgba(8, 74, 160, 0.6);
+}
+
+#lifestyle-page .close:hover {
+    background-color: rgba(207, 231, 120, 0.8);
+    color: rgb(0, 82, 57);
+}
+
+#lifestyle-page .op1 {
+    background-image: linear-gradient(-45deg, rgba(1, 100, 46, 0.5), rgba(16, 119, 179, 0.603)), url(../assets/lifestyle-imgs/family-vlog-4868x3246.jpeg);
+}
+
+#lifestyle-page .op2 {
+    background-image: linear-gradient(-45deg, rgba(1, 100, 46, 0.5), rgba(16, 119, 179, 0.603)), url(../assets/lifestyle-imgs/vlog-5472x3648.jpeg);
+}
+
+#lifestyle-page .route-1 .route-box,
+#lifestyle-page .route-1 .route-box a {
+    background-color: rgb(233, 215, 157);
+    color: rgb(129, 61, 5);
+}
+
+#lifestyle-page .route-1 .route-box .close {
+    background-color: rgb(168, 98, 17);
+    color: rgb(233, 215, 157);
+}
+
+#lifestyle-page .route-1 .route-box .close:hover {
+    background-color: rgba(47, 109, 62, 0.589);
+}
+
+#lifestyle-page .route-2 .route-box,
+#lifestyle-page .route-2 .route-box a {
+    background-color: rgb(131, 194, 95);
+    color: rgb(1, 68, 27);
+}
+
+#lifestyle-page .route-2 .route-box .close {
+    background-color: rgba(248, 229, 255, 0.6);
+    color: rgb(1, 68, 27);
+}
+
+#lifestyle-page .route-2 .route-box .close:hover {
+    background-color: rgba(248, 206, 89, 0.6);
 }
 
 @media screen and (min-width:1200px) {
@@ -464,6 +729,6 @@ textarea {
     }
 }
 
-.test { 
+.test {
     background-color: chartreuse;
 }
