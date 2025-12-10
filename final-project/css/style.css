@@ -276,6 +276,11 @@ textarea {
     height: 20rem;
 
     cursor: pointer;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (min-width:1300px) {
@@ -300,6 +305,13 @@ textarea {
     height: 40rem;
 
     cursor: pointer;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
 
@@ -352,8 +364,9 @@ textarea {
     width: 70%;
     height: 60%;
 
-    
+
 }
+
 
 
 .route-box a {
@@ -365,9 +378,9 @@ textarea {
 
 }
 
-.rb-text { 
+.rb-text {
     display: flex;
-     flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
 }
@@ -386,52 +399,71 @@ textarea {
     }
 }
 
-/* Art Page 
+/* Art Page
 -------------------------------------------------------------------------- */
 #art-page main {
     background-color: rgb(209, 255, 182);
 }
 
 @media screen and (max-width:850px) {
-    #art-page main, #game-page main, #makeup-page main, #lifestyle-page main {
-        height: 100vh;
+
+    #genre-page main,
+    #art-page main,
+    #game-page main,
+    #makeup-page main,
+    #lifestyle-page main {
+        height: 140vh;
     }
 }
 
 /* Game Page 
 -------------------------------------------------------------------------- */
-#game-page main { 
-background-color: rgb(86, 75, 233);
+#game-page main {
+    background-color: rgb(86, 75, 233);
 }
 
 
 /* Makeup Page 
 -------------------------------------------------------------------------- */
- #makeup-page{ 
-background-color: rgb(245, 188, 221);
- }
+#makeup-page {
+    background-color: rgb(245, 188, 221);
+}
 
 
 /* LifeStyleW Page 
 -------------------------------------------------------------------------- */
-#lifestyle-page{ 
-background-color: rgb(68, 163, 5);
+#lifestyle-page {
+    background-color: rgb(68, 163, 5);
 }
 
 @media screen and (min-width:1200px) {
-    #art-page main, #game-page main, #makeup-page main, #lifestyle-page main, #genre-page main {
+
+    #art-page main,
+    #game-page main,
+    #makeup-page main,
+    #lifestyle-page main,
+    #genre-page main {
         background-color: rgba(238, 183, 138, 0.8);
     }
 }
 
 @media screen and (min-width:601px) and (max-width:1199px) {
-  main {
+    main {
         background-color: rgba(99, 189, 231, 0.8);
     }
 }
 
 @media screen and (max-width:600px) {
-    #art-page main, #game-page main, #makeup-page main, #lifestyle-page main, #genre-page main {
+
+    #art-page main,
+    #game-page main,
+    #makeup-page main,
+    #lifestyle-page main,
+    #genre-page main {
         background-color: rgba(92, 2, 128, 0.8);
     }
+}
+
+.test { 
+    background-color: chartreuse;
 }
