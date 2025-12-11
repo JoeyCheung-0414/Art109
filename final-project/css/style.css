@@ -76,6 +76,8 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url(../assets/genre-imgs/camrea-4928x3264.jpg);
 }
 
 .start {
@@ -83,8 +85,9 @@ footer p {
     width: 50rem ; */
 
     padding: 10rem;
-    background-color: aquamarine;
+    background-color: rgba(78, 51, 71, 0.897);
 
+    color: aliceblue;
     text-align: center;
 
     border-radius: .5rem;
@@ -130,12 +133,12 @@ footer p {
 
     text-decoration: none;
     color: white;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(219, 7, 88);
     border-radius: 5rem;
 }
 
 .start a:hover {
-    background-color: rgb(13, 0, 200);
+    background-color: rgb(200, 147, 0);
     transition: background-color 0.5s ease;
 }
 
@@ -358,6 +361,13 @@ textarea {
     text-transform: capitalize;
 }
 
+@media screen and (max-width:850px) {
+    .minor-choice { 
+        width: 20rem;
+    }
+    
+}
+
 /* music control
 -------------------------------------------------------------------------- */
 .music-control {
@@ -392,29 +402,23 @@ textarea {
     height: 60%;
 }
 
+@media screen and (max-width:850px) {
+    .route-box{ 
+        top: 50%;
+        height: 80%;
+    }
+    main { 
+        height: 100%;
+    }
+    
+}
+
 .route-box a {
     display: block;
     text-decoration: none;
 
     width: 25rem;
     padding: 1rem 0rem;
-}
-
-
-.r-img-c { 
-    align-items: center;
- border: 1px solid ;
-  width: 30rem;
-  height: 20rem;
-  overflow: hidden;
-  display: flex;
-}
-
-.route-img { 
-     max-width: inherit;
-  max-height: inherit;
-  height: inherit;
-  width: inherit;
 }
 
 .top-gap {
@@ -433,6 +437,14 @@ progress {
 
     height: 4rem;
     width: 40rem;
+}
+
+@media screen and (max-width:850px) {
+    progress{ 
+        height: 3rem;
+        width: 25rem;
+    }
+    
 }
 
 .progress-bar {
