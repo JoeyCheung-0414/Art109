@@ -9,6 +9,17 @@ document.querySelector(".btn-1").addEventListener("click", function () {
    document.querySelector(".c1").style.display = "block";
 })
 
+//Text Box 0  
+document.querySelector(".btn-0").addEventListener("click", function () {
+   document.querySelector(".g-text-0").style.visibility = "hidden";
+   
+})
+
+//Warning hide
+document.querySelector(".warning-close").addEventListener("click", function () {
+   document.querySelector(".warning").style.visibility = "hidden";
+})
+
 
 
 //Choice 1

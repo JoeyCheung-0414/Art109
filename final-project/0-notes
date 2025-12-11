@@ -1,0 +1,27 @@
+<div class="route-box">
+                <div class="rb-text">
+                    <div class="progress-bar">
+                        <p> <b>Subscriber Count:</b> </p>
+                        <progress value="40" max="100"></progress>
+
+                    </div>
+                    <h2> Now that you gain a substantial amount of Subscribers. You got some new ideas. You deciede to
+                        start a new seris on your channel
+                    </h2>
+                    <p class="hide close minor-choice">Lucky Block Series</p> <br>
+                    <p class="hide close minor-choice">Challenges Games Series</p>
+                </div>
+            </div>
+            
+            <div class="route-box">
+                <div class="rb-text">
+                    <div class="progress-bar">
+                        <p> <b>Subscriber Count:</b> </p>
+                        <progress value="10" max="100"></progress>
+
+                    </div>
+                    <h2> You decided to record yourself play minecraft, your video goes well and you start gaining a
+                        following.</h2>
+                    <p class="hide close">•••</p>
+                </div>
+            </div>
