@@ -35,3 +35,23 @@ document.querySelectorAll(".hide").forEach(btn => {
     if (box) box.classList.add("invisible");
   });
 });
+
+//minor Choice 
+//mc1 Open 
+document.querySelector(".mc1-open").addEventListener("click", function () {
+  document.querySelector(".m1").style.display = "block";
+})
+//mc1 close 
+document.querySelector(".mc1-close").addEventListener("click", function () {
+  document.querySelector(".m1").style.display = "none";
+})
+
+//mc2 Open 
+document.querySelector(".mc2-open").addEventListener("click", function () {
+  document.querySelector(".m2").style.display = "block";
+})
+
+//mc2 close 
+document.querySelector(".mc2-close").addEventListener("click", function () {
+  document.querySelector(".m2").style.display = "none";
+})
