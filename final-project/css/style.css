@@ -10,6 +10,8 @@ html {
         Ex. 
         5px = .5 rem
         20px =  2rem*/
+
+    font-family: sans-serif;
 }
 
 body {
@@ -237,10 +239,11 @@ textarea {
     /*REMOVE lATER?*/
 }
 
+
 /* Choice / Options
 -------------------------------------------------------------------------- */
 .choice-container {
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 2rem;
 
@@ -266,6 +269,8 @@ textarea {
     display: grid;
     place-items: center;
     gap: 2rem;
+
+    font-family: 'Times New Roman', Times, serif;
 }
 
 @media screen and (min-width:850px) {
@@ -301,6 +306,8 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    font-size:5rem;
 }
 
 @media screen and (min-width:1300px) {
@@ -330,6 +337,7 @@ textarea {
     cursor: pointer;
 
     text-align: center;
+    font-size:5rem;
 }
 
 
@@ -362,10 +370,10 @@ textarea {
 }
 
 @media screen and (max-width:850px) {
-    .minor-choice { 
+    .minor-choice {
         width: 20rem;
     }
-    
+
 }
 
 /* music control
@@ -400,17 +408,30 @@ textarea {
 
     width: 70%;
     height: 60%;
+
+    overflow: scroll;
+    Overflow-x: hidden
+
+}
+
+.route-box h1 { 
+    margin: 0;
+}
+
+.route-box h2 { 
+    font-size: 2.5rem;
 }
 
 @media screen and (max-width:850px) {
-    .route-box{ 
+    .route-box {
         top: 50%;
         height: 80%;
     }
-    main { 
+
+    main {
         height: 100%;
     }
-    
+
 }
 
 .route-box a {
@@ -440,11 +461,11 @@ progress {
 }
 
 @media screen and (max-width:850px) {
-    progress{ 
+    progress {
         height: 3rem;
         width: 25rem;
     }
-    
+
 }
 
 .progress-bar {
@@ -458,8 +479,6 @@ progress {
 
 /* Genre Page 
 -------------------------------------------------------------------------- */
-
-
 #genre-page main {
     background-image: linear-gradient(rgba(104, 104, 104, 0.767), rgb(0, 0, 0, .9)), url(../assets/genre-imgs/camrea-4928x3264.jpg);
 }
@@ -499,21 +518,30 @@ progress {
     background-image: linear-gradient(-45deg, rgba(0, 83, 28, 0.705), rgba(10, 81, 122, 0.603)), url(../assets/genre-imgs/vlog-5472x3648.jpg);
 }
 
-#genre-page .warning { 
-    background-color: rgb(255, 237, 77);
-    text-align: left;
-}
 
-#genre-page .g-text-0{ 
+#genre-page .g-text-0 {
     background-color: rgb(212, 212, 169);
     text-align: left;
 }
+
+#genre-page .warning {
+    background-color: rgb(255, 237, 77);
+    color: black;
+    text-align: left;
+}
+
 
 @media screen and (max-width:800px) {
     #genre-page main {
         height: 110vh;
     }
+
+    #genre-page .warning h1 {
+        font-size: 2.5rem;
+    }
 }
+
+
 
 /* Art Page
 -------------------------------------------------------------------------- */
@@ -582,7 +610,7 @@ progress {
     #game-page main,
     #makeup-page main,
     #lifestyle-page main {
-        height: 140vh;
+        height: 160vh;
     }
 }
 
@@ -763,6 +791,181 @@ progress {
 #lifestyle-page .route-2 .route-box .close:hover {
     background-color: rgba(248, 206, 89, 0.6);
 }
+
+
+/*End Credits 
+-------------------------------------------------------------------------- */
+
+#end-page main {
+    background-image: linear-gradient(rgba(104, 104, 104, 0.767), rgb(0, 0, 0, .9)), url(../assets/genre-imgs/camrea-4928x3264.jpg);
+}
+
+#end-page .text-box,
+#end-page .branch-1 a,
+#genre-page .choice-container {
+    color: rgb(48, 48, 48);
+    background-color: rgba(196, 196, 196, 0.6);
+}
+
+#end-page .options-container {
+    color: white;
+}
+
+#end-page .close {
+    background-color: rgba(247, 247, 247, 0.6);
+}
+
+#end-page .close:hover {
+    background-color: rgba(73, 73, 73, 0.8);
+}
+
+#end-page .warning {
+    background-color: rgb(255, 237, 77);
+    color: black;
+    text-align: left;
+    display: none;
+}
+
+.e1-btn-box .close {
+    width: 20rem;
+}
+
+.e1-btn-box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.e1-btn-box a,
+.e1-btn-box h2 {
+    margin: 0;
+    color: rgb(48, 48, 48);
+    font-weight: bold;
+}
+
+.playbtn {
+    color: rgb(48, 48, 48);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.e2-text {
+    display: none;
+}
+
+.arrow {
+    margin: 4rem;
+}
+
+.arrow h1 {
+    cursor: pointer;
+    line-height: 10%;
+    font-size: 10rem;
+    width: 100%;
+
+    margin: 0;
+}
+
+.arrow h1:hover {
+    transform: scale(1.15);
+    color: white;
+
+    transition: all 0.5s;
+}
+
+/*End Creator info
+-------------------------------------------------------------------------- */
+.back-btn-1,
+.back-btn-2 {
+    cursor: pointer;
+}
+
+.creator-box {
+    display: flex;
+    justify-content: center;
+}
+
+.creator {
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+
+    width: 85%;
+    height: 89.5vh;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+}
+
+.c-btn-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.cr-btn {
+    color: rgb(48, 48, 48);
+    font-weight: bold;
+    text-decoration: none;
+
+    width: 25%;
+}
+
+.video {
+    width: 60vw;
+    height: 30vw;
+}
+
+@media screen and (min-width:1200px) {
+    .video {
+        width: 50vw;
+        height: 25vw;
+    }
+}
+
+
+.op1 {
+    background-image: linear-gradient(rgba(255, 249, 249, 0.582), rgba(0, 0, 0, 0.712)), url(../assets/end-imgs/jazza-2560x717.jpg);
+}
+
+.op2 {
+    background-image: linear-gradient(rgba(255, 249, 249, 0.582), rgba(0, 0, 0, 0.712)), url(../assets/end-imgs/popularmmos-1280x720.jpg);
+}
+
+.op3 {
+    background-image: linear-gradient(rgba(255, 249, 249, 0.582), rgba(0, 0, 0, 0.712)), url(../assets/end-imgs/nikkie.jpg);
+}
+
+.op4 {
+    background-image: linear-gradient(rgba(255, 249, 249, 0.582), rgba(0, 0, 0, 0.712)), url(../assets/end-imgs/ace-family-1400x825.jpg);
+}
+
+.op5 {
+    background-image: linear-gradient(rgba(255, 249, 249, 0.582), rgba(0, 0, 0, 0.712)), url(../assets/end-imgs/creepshow-art-1280x720.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.op6 {
+    background-image: linear-gradient(rgba(255, 249, 249, 0.582), rgba(0, 0, 0, 0.712)), url(../assets/end-imgs/pewdiepie.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.op7 {
+    background-image: linear-gradient(rgba(255, 249, 249, 0.582), rgba(0, 0, 0, 0.712)), url(../assets/end-imgs/jeffree-morphe-1400x825.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.op8 {
+    background-image: linear-gradient(rgba(255, 249, 249, 0.582), rgba(0, 0, 0, 0.712)), url(../assets/end-imgs/colleen-ballinger-1200x630.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
 
 @media screen and (min-width:1200px) {
 
