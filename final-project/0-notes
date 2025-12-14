@@ -1,27 +1,81 @@
 <div class="route-box">
+    <div class="rb-text">
+        <div class="progress-bar">
+            <p> <b>Subscriber Count:</b> </p>
+            <progress value="40" max="100"></progress>
+
+        </div>
+        <h2> Now that you gain a substantial amount of Subscribers. You got some new ideas. You deciede to
+            start a new seris on your channel
+        </h2>
+        <p class="hide close minor-choice">Lucky Block Series</p> <br>
+        <p class="hide close minor-choice">Challenges Games Series</p>
+    </div>
+</div>
+
+
+<div class="route-box">
+
+    <div class="rb-text">
+        <div class="progress-bar">
+            <p> <b>Subscriber Count:</b> </p>
+            <progress value="40" max="100"></progress>
+
+        </div>
+        <h2>
+         
+        </h2>
+        <p class="hide close">•••</p>
+    </div>
+</div>
+
+
+
+
+For Minor Choice A 
+
+<div class="route-box invisible mc1">
                 <div class="rb-text">
                     <div class="progress-bar">
                         <p> <b>Subscriber Count:</b> </p>
-                        <progress value="40" max="100"></progress>
+                        <progress value="20" max="100"></progress>
 
                     </div>
-                    <h2> Now that you gain a substantial amount of Subscribers. You got some new ideas. You deciede to
-                        start a new seris on your channel
+                    <h2>
+                        You criticized Jeffree Star for his long history of racism, intimidation tactics, and constant
+                        drama cycles. How he never really changed dispite him sayig he head reflected on his own
+                        actions.
                     </h2>
-                    <p class="hide close minor-choice">Lucky Block Series</p> <br>
-                    <p class="hide close minor-choice">Challenges Games Series</p>
+                    <p class="close mc1-close">•••</p>
                 </div>
             </div>
-            
+
+            <div class="route-box invisible mc2">
+                <div class="rb-text">
+                    <div class="progress-bar">
+                        <p> <b>Subscriber Count:</b> </p>
+                        <progress value="20" max="100"></progress>
+
+                    </div>
+                    <h2>
+                        You call out Shane Dawson for his racist skits and inappropriate jokes as well as for him to not
+                        taking countability for his actions.
+                    </h2>
+                    <p class="hide close mc2-close">•••</p>
+                </div>
+            </div>
+
             <div class="route-box">
                 <div class="rb-text">
                     <div class="progress-bar">
                         <p> <b>Subscriber Count:</b> </p>
-                        <progress value="10" max="100"></progress>
+                        <progress value="5" max="100"></progress>
 
                     </div>
-                    <h2> You decided to record yourself play minecraft, your video goes well and you start gaining a
-                        following.</h2>
-                    <p class="hide close">•••</p>
+                    <h2>
+                        For your 1st video you decide to make a video calling S
+                    </h2>
+                    <p class="hide close minor-choice mc1-open ">Jeffree Star</p> <br>
+                    <p class="hide close minor-choice mc2-open ">Shane Dawson</p>
                 </div>
             </div>
