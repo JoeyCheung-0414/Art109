@@ -164,7 +164,6 @@ footer p {
 
     color: white;
     background-color: rgba(0, 0, 0, 0.459);
-    /*REMOVE lATER*/
 }
 
 .text-box a {
@@ -184,7 +183,6 @@ textarea {
     box-sizing: border-box;
     width: 50rem;
     height: 15rem;
-
     padding: 1rem;
 
     font-size: 1.5rem;
@@ -609,7 +607,7 @@ progress {
     #art-page main,
     #game-page main,
     #makeup-page main,
-    #lifestyle-page main {
+    #lifestyle-page main, .end-page main {
         height: 160vh;
     }
 }
@@ -961,40 +959,4 @@ progress {
     background-image: linear-gradient(rgba(255, 249, 249, 0.582), rgba(0, 0, 0, 0.712)), url(../assets/end-imgs/colleen-ballinger-1200x630.jpg);
     background-position: center;
     background-size: cover;
-}
-
-
-
-
-
-@media screen and (min-width:1200px) {
-
-    #art-page main,
-    #game-page main,
-    #makeup-page main,
-    #lifestyle-page main,
-    #genre-page main {
-        background-color: rgba(238, 183, 138, 0.8);
-    }
-}
-
-@media screen and (min-width:601px) and (max-width:1199px) {
-    main {
-        background-color: rgba(99, 189, 231, 0.8);
-    }
-}
-
-@media screen and (max-width:600px) {
-
-    #art-page main,
-    #game-page main,
-    #makeup-page main,
-    #lifestyle-page main,
-    #genre-page main {
-        background-color: rgba(92, 2, 128, 0.8);
-    }
-}
-
-.test {
-    background-color: chartreuse;
 }
